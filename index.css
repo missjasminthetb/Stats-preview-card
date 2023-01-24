@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+main {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+strong {
+    font-weight: lighter;
+    color: hsl(277, 64%, 61%);
+    font-weight: 700;
+}
+.boxa {
+    width: 600px;
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.picture {
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.picture::after{
+    position: absolute;
+    z-index: 10  ;
+    content:'' ;
+    top: 0;
+    left: 0;
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+  .picture img {
+    width: 100%;
+    height: 100%;
+    
+   
+  }
+  img {
+    filter: contrast(250%);
+  }
+  .text1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .text2 {
+    color:hsla(0, 0%, 100%, 0.75) ;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    
+  }
+  .numbers {
+
+    text-transform: uppercase;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .numbers h3{
+    font-family:'Lexend Deca', sans-serif;
+    color:hsl(0, 0%, 100%) ;
+  }
+  .numbers p{
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+ letter-spacing: 0.9px;
+  }
+  .left {
+    padding: 40px;
+    width: 400px;
+  }
+  .text {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .boxa+.attribution {
+    margin: 10px;
+  }
